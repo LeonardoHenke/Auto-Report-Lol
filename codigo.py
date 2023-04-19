@@ -48,7 +48,7 @@ for i, regiao in enumerate(coordenadas_pixel):
     x,y = regiao
     cor_pixel = pyautogui.pixel(x, y)
     if cor_pixel != pixel_amarelo:
-        pyautogui.click(cordenadas_botaoDenunc[i], duration=0.2)
+        pyautogui.click(cordenadas_botaoDenunc[i], duration=0.3)
         mods.denuncias_do_jogador()
         print(f'Player{i+1} - reportado')
     else:
