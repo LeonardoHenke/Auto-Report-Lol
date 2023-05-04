@@ -55,4 +55,4 @@ for i, regiao in enumerate(coordenadas_pixel):
         print(f'Player{i+1} - é nóis')
 
 # - clicar em continuar:
-mods.botao_continuar()
+#mods.botao_continuar()
