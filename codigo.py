@@ -21,26 +21,20 @@ cordenadas_botaoDenunc = [[600, 336], [601, 373], [601, 414], [601, 459], [602, 
 lol_window = gw.getWindowsWithTitle('League of Legends')[0]
 lol_window.activate()
 
-# esperando carregar a página
-while not pyautogui.locateCenterOnScreen(honra):
-    sleep(1)
-    print('esperando1')
+# esperando carregar a página1
+mods.carregar_pagina(honra, 'esperando1')
 
 # pular honras:
 mods.botao_pular_honras()
 
 # esperando carregar a página
-while not pyautogui.locateCenterOnScreen(continuar1):
-    sleep(1)
-    print('esperando2')
+mods.carregar_pagina(continuar1, 'esperando2')
 
 # - clicar em continuar:
 mods.botao_continuar()
 
 # esperando carregar a página
-while not pyautogui.locateCenterOnScreen(continuar2):
-    sleep(1)
-    print('esperando3')
+mods.carregar_pagina(continuar2, 'esperando3')
 sleep(1)
 
 # verificar se a cor do pixel é amarela
